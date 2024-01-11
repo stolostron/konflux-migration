@@ -22,6 +22,6 @@ spec:
       dockerfileUrl: {{ $component.git.dockerfileUrl }}
       {{- end }}
       {{- if $component.git.devfileUrl }}
-      devfileUrl: {{ $component.git.devfileUrl }}
+      revision: {{ $component.git.revision }}
       {{- end }}
 {{ end }}
