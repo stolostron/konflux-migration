@@ -1,7 +1,7 @@
 apiVersion: appstudio.redhat.com/v1alpha1
 kind: Application
 metadata:
-  name: mce-25
+  name: base
 spec:
-  description: "MCE 2.5"
-  displayName: "MCE 2.5"
+  description: base
+  displayName: base

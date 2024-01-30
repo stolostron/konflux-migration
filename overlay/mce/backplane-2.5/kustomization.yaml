@@ -4,15 +4,7 @@ kind: Kustomization
 resources:
   - ../mce-base
 
-configMapGenerator:
-- name: config
-  literals:
-  - applicationName=mce-25
-  - applicationDescription="Pipeline for MCE 2.5"
-  - backplaneBranch=backplane-2.5
-
-# patches:
-#   - target:
-#       kind: Application
-#       name: advanced-cluster-management
-#     path: patch-channel.yaml
+patches:
+  - target:
+      kind: Application
+    path: application-patch.yaml

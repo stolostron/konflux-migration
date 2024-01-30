@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: mce-25
+- op: replace
+  path: /spec/description
+  value: "MCE 2.5"
+- op: replace
+  path: /spec/displayName
+  value: "MCE 2.5"
