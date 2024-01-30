@@ -1,0 +1,21 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Component
+metadata:
+  name: addon-manager
+spec:
+  - componentName: addon-manager
+  - application: appName
+    valueFrom:
+        configMapKeyRef:
+          name: config
+          key: applicationName
+  - source:
+      git:
+        url: https://github.com/stolostron/ocm
+        context: ./
+        dockerfileUrl: build/Dockerfile.addon.rhtap
+        - revision: branch
+          valueFrom:
+                configMapKeyRef:
+                  name: config
+                  key: backplaneBranch

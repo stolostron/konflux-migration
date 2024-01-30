@@ -1,0 +1,19 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Application
+metadata:
+  - name: appName
+    valueFrom:
+            configMapKeyRef:
+              name: config
+              key: applicationName
+spec:
+  - description: appDescription
+    valueFrom:
+              configMapKeyRef:
+                name: config
+                key: applicationDescription 
+  - displayName: appDisName
+    valueFrom:
+              configMapKeyRef:
+                name: config
+                key: applicationName
