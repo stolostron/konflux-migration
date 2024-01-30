@@ -1,7 +1,7 @@
 apiVersion: appstudio.redhat.com/v1alpha1
 kind: Application
 metadata:
-  name: {{ .Values.application.name }}
+  name: mce-25
 spec:
-  description: {{ .Values.application.description }} 
-  displayName: {{ .Values.application.displayName }}
+  description: "MCE 2.5"
+  displayName: "MCE 2.5"

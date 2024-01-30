@@ -11,8 +11,8 @@ configMapGenerator:
   - applicationDescription="Pipeline for MCE 2.5"
   - backplaneBranch=backplane-2.5
 
-patches:
-  - target:
-      kind: Application
-      name: advanced-cluster-management
-    path: patch-channel.yaml
+# patches:
+#   - target:
+#       kind: Application
+#       name: advanced-cluster-management
+#     path: patch-channel.yaml

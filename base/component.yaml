@@ -4,5 +4,6 @@ metadata:
   annotations:
     image.redhat.com/generate: "true"
     appstudio.openshift.io/pac-provision: request
+  name: example-component
 spec:
   targetPort: 8080
