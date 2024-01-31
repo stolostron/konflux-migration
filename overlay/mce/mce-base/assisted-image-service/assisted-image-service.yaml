@@ -10,6 +10,3 @@
 - op: replace
   path: /spec/source/git/dockerfileUrl
   value: Dockerfile.image-service
-- op: add
-  path: /spec/labels
-  value: assisted-installer

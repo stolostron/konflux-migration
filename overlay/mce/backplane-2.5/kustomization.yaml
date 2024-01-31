@@ -11,7 +11,11 @@ patches:
   - target:
       kind: Component
     path: component-patch.yaml
-  # - target:
-  #     kind: Component
-  #     labelSelector: "label=assisted-installer"
-  #   path: ocm-branch-path.yaml
+  - target:
+      kind: Component
+      name: assisted.*
+    path: ocm-branch-patch.yaml
+  - target:
+      kind: Component
+      name: hypershift.*
+    path: hypershift-branch-patch.yaml
