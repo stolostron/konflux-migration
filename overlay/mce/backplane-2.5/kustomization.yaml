@@ -8,3 +8,10 @@ patches:
   - target:
       kind: Application
     path: application-patch.yaml
+  - target:
+      kind: Component
+    path: component-patch.yaml
+  # - target:
+  #     kind: Component
+  #     labelSelector: "label=assisted-installer"
+  #   path: ocm-branch-path.yaml

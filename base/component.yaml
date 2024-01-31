@@ -6,4 +6,14 @@ metadata:
     appstudio.openshift.io/pac-provision: request
   name: example-component
 spec:
+  componentName: example-component
+  application: appName
   targetPort: 8080
+  source:
+      git:
+        url: gitUrl
+        context: ./
+        dockerfileUrl: ContainerFileLocation
+        revision: defaultBranch
+
+  
