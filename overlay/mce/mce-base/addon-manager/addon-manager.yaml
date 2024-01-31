@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: addon-manager
+- op: replace
+  path: /spec/componentName
+  value: addon-manager
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/ocm
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: build/Dockerfile.addon.rhtap
