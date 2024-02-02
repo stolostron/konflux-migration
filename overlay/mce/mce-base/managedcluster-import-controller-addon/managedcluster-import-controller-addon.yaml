@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: managedcluster-import-controller-addon
+- op: replace
+  path: /spec/componentName
+  value: managedcluster-import-controller-addon
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/managedcluster-import-controller
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "build/Dockerfile.rhtap"

@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: hive
+- op: replace
+  path: /spec/componentName
+  value: hive
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/openshift/hive
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"

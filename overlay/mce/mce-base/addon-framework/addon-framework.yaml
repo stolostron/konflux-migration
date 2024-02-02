@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: addon-framework
+- op: replace
+  path: /spec/componentName
+  value: addon-framework
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/addon-framework
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"

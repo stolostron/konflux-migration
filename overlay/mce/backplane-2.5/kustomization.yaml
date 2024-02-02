@@ -17,5 +17,37 @@ patches:
     path: ocm-branch-patch.yaml
   - target:
       kind: Component
-      name: hypershift.*
+      name: hypershift-release.*
     path: hypershift-branch-patch.yaml
+  - target:
+      kind: Component
+      name: cluster-api*
+    path: openshift-branch-patch.yaml
+  - patch: |-
+      - op: replace
+        path: /spec/source/git/revision
+        value: release-4.15
+    target:
+      kind: Component
+      name: "apiserver-network-proxy"
+  - patch: |-
+      - op: replace
+        path: /spec/source/git/revision
+        value: release-ocm-2.10
+    target:
+      kind: Component
+      name: "cluster-api-provider-agent"
+  - patch: |-
+      - op: replace
+        path: /spec/source/git/revision
+        value: master
+    target:
+      kind: Component
+      name: "aws-encryption-provider"
+  - patch: |-
+      - op: replace
+        path: /spec/source/git/revision
+        value: master
+    target:
+      kind: Component
+      name: "hive"

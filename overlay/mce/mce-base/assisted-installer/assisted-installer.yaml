@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: assisted-installer
+- op: replace
+  path: /spec/componentName
+  value: assisted-installer
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/openshift/assisted-installer
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile.assisted-installer"

@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: cluster-proxy-addon
+- op: replace
+  path: /spec/componentName
+  value: cluster-proxy-addon
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/cluster-proxy-addon
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile.rhtap"

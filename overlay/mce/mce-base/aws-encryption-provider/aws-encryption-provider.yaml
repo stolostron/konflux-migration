@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: aws-encryption-provider
+- op: replace
+  path: /spec/componentName
+  value: aws-encryption-provider
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/openshift/aws-encryption-provider
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"
