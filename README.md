@@ -1,3 +1,3 @@
-# RHTAP Migration
+# RHTAP Migration for CasC
 
-Repository to store tools created by the RHTAP Migration team.
+Building out this repository to serve as both an example and information hub on creating new konflux applications using `kustomize`
