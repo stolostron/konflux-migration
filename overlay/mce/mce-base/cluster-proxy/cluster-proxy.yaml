@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/cluster-proxy
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile.rhtap"
+  value: "cmd/Dockerfile.rhtap"

@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-  
+
+nameSuffix: -mce-25
 resources:
   - ../mce-base
 
@@ -21,7 +22,7 @@ patches:
     path: hypershift-branch-patch.yaml
   - target:
       kind: Component
-      name: cluster-api*
+      name: cluster-api.*
     path: openshift-branch-patch.yaml
   - patch: |-
       - op: replace
@@ -29,21 +30,21 @@ patches:
         value: release-4.15
     target:
       kind: Component
-      name: "apiserver-network-proxy"
+      name: "apiserver-network-proxy.*"
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
         value: release-ocm-2.10
     target:
       kind: Component
-      name: "cluster-api-provider-agent"
+      name: "cluster-api-provider-agent.*"
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
         value: master
     target:
       kind: Component
-      name: "aws-encryption-provider"
+      name: "aws-encryption-provider.*"
   - patch: |-
       - op: replace
         path: /spec/source/git/revision

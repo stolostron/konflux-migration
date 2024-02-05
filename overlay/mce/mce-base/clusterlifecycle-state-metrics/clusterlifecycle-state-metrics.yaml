@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/clusterlifecycle-state-metrics
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile.rhtap"
+  value: "build/Dockerfile.rhtap"

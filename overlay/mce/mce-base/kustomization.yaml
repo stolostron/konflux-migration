@@ -15,10 +15,10 @@ resources:
   - ./backplane-must-gather
   - ./backplane-operator
   - ./cluster-api
-  # - ./cluster-api-aws-controller
-  # - ./cluster-api-provider-agent
-  # - ./cluster-api-provider-azure
-  # - ./cluster-api-provider-kubevirt
+  - ./cluster-api-aws-controller
+  - ./cluster-api-provider-agent
+  - ./cluster-api-provider-azure
+  - ./cluster-api-provider-kubevirt
   - ./cluster-curator-controller
   - ./cluster-image-set-controller
   - ./cluster-proxy 

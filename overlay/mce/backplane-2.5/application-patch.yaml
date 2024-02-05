@@ -1,6 +1,6 @@
 - op: replace
   path: /metadata/name
-  value: mce-25
+  value: release
 - op: replace
   path: /spec/description
   value: "Pipeline for MCE 2.5"
