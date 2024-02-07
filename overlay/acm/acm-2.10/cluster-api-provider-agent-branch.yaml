@@ -1,0 +1,4 @@
+- op: replace
+  path: /spec/source/git/revision
+  value: release-ocm-2.10
+#This is a duplicate of the "ocm-branch-patch" because you can't apply the same patch file twice
