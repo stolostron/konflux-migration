@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/source/git/revision
-  value: release-ocm-2.10

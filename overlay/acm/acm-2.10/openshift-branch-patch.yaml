@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/source/git/revision
-  value: release-4.15

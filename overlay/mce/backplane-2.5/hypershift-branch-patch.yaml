@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/source/git/revision
-  value: hypershift-release-415
