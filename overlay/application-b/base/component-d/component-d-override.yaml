@@ -1,12 +1,12 @@
 - op: replace
   path: /metadata/name
-  value: cluster-permission
+  value: component-d-name
 - op: replace
   path: /spec/componentName
-  value: cluster-permission
+  value: component-d-name
 - op: replace
   path: /spec/source/git/url
-  value: https://github.com/stolostron/cluster-permission
+  value: https://myvcs.com/myorg/component-d
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile.rhtap"
+  value: "Dockerfile"

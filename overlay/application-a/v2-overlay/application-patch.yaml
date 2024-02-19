@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: v2
+- op: replace
+  path: /spec/description
+  value: "Pipeline for application-a v2"
+- op: replace
+  path: /spec/displayName
+  value: "application-a v2"

@@ -1,12 +1,12 @@
 - op: replace
   path: /metadata/name
-  value: cluster-backup-operator
+  value: component-a-name
 - op: replace
   path: /spec/componentName
-  value: cluster-backup-operator
+  value: component-a-name
 - op: replace
   path: /spec/source/git/url
-  value: https://github.com/stolostron/cluster-backup-operator
+  value: https://myvcs.com/myorg/component-a
 - op: replace
   path: /spec/source/git/dockerfileUrl
   value: "Dockerfile"
