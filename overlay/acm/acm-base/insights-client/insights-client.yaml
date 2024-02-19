@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: insights-client
+- op: replace
+  path: /spec/componentName
+  value: insights-client
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/insights-client
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"

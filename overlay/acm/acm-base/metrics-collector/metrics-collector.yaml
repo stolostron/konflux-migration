@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: metrics-collector
+- op: replace
+  path: /spec/componentName
+  value: metrics-collector
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicluster-observability-operator
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "collectors/metrics/Containerfile.operator"

@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: multicloud-integrations
+- op: replace
+  path: /spec/componentName
+  value: multicloud-integrations
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicloud-integrations
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "build/Dockerfile.rhtap"

@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: grafana-dashboard-loader
+- op: replace
+  path: /spec/componentName
+  value: grafana-dashboard-loader
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicluster-observability-operator
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "loaders/dashboards/Containerfile.operator"

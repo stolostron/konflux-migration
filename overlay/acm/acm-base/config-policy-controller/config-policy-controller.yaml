@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: config-policy-controller
+- op: replace
+  path: /spec/componentName
+  value: config-policy-controller
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/config-policy-controller
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "build/Dockerfile"

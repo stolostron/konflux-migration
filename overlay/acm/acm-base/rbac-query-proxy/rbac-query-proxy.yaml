@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: rbac-query-proxy
+- op: replace
+  path: /spec/componentName
+  value: rbac-query-proxy
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicluster-observability-operator
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "proxy/Containerfile.operator"

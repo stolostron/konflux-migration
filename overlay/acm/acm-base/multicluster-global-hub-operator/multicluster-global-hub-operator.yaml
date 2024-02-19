@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: multicluster-global-hub-operator
+- op: replace
+  path: /spec/componentName
+  value: multicluster-global-hub-operator
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicluster-global-hub
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "operator/Dockerfile"

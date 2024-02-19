@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: klusterlet-addon-controller
+- op: replace
+  path: /spec/componentName
+  value: klusterlet-addon-controller
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/klusterlet-addon-controller
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "build/Dockerfile"

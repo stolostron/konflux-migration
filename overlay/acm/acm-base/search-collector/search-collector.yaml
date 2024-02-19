@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: search-collector
+- op: replace
+  path: /spec/componentName
+  value: search-collector
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/search-collector
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"
