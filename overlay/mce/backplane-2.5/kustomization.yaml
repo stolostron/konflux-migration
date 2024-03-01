@@ -19,7 +19,7 @@ patches:
   - target:
       kind: Component
       name: hypershift-release.*
-    path: hypershift-branch-patch.yaml
+    path: openshift-branch-patch.yaml
   - target:
       kind: Component
       name: cluster-api.*

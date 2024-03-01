@@ -4,3 +4,45 @@ kind: Kustomization
 resources:
   - application.yaml
   - ./analytics-recommends
+  - ./cert-policy-controller
+  - ./cluster-backup-controller
+  - ./cluster-permission
+  - ./config-policy-controller
+  - ./console
+  - ./endpoint-monitoring-operator
+  - ./governance-policy-addon-controller
+  - ./governance-policy-framework-addon
+  - ./governance-policy-propagator
+  - ./grafana
+  - ./grafana-dashboard-loader
+  - ./iam-policy-controller
+  - ./insights-client
+  - ./insights-metrics
+  - ./klusterlet-addon-controller
+  - ./kube-rbac-proxy
+  - ./metrics-collector
+  - ./multicloud-integrations
+  - ./multicluster-global-hub-operator
+  - ./multicluster-observability-operator
+  - ./multicluster-operators-application
+  - ./multicluster-operators-channel
+  - ./multicluster-operators-subscription
+  - ./multiclusterhub-operator
+  - ./must-gather
+  - ./node-exporter
+  - ./observatorium
+  - ./observatorium-operatorr
+  - ./prometheus
+  - ./prometheus-alertmanager
+  - ./prometheus-config-reloader
+  - ./prometheus-operator
+  - ./rbac-query-proxy
+  - ./search-collector
+  - ./search-indexer
+  - ./search-operator-bundle
+  - ./search-v2-api
+  - ./search-v2-operator
+  - ./submariner-addon
+  - ./thanos
+  - ./thanos-receive-controller
+  - ./volsync-addon-controller
