@@ -5,19 +5,19 @@ resources:
   - application.yaml
   # - ./addon-framework
   - ./addon-manager
-  - ./apiserver-network-proxy
-  # - ./assisted-image-service
-  # - ./assisted-installer
-  # - ./assisted-installer-agent
-  # - ./assisted-installer-controller
-  # - ./assisted-service
+  # - ./apiserver-network-proxy
+  - ./assisted-image-service
+  - ./assisted-installer
+  - ./assisted-installer-agent
+  - ./assisted-installer-controller
+  - ./assisted-service
   # - ./aws-encryption-provider
   - ./backplane-must-gather
   - ./backplane-operator
-  - ./cluster-api
-  - ./cluster-api-aws-controller
+  # - ./cluster-api
+  # - ./cluster-api-aws-controller
   - ./cluster-api-provider-agent
-  - ./cluster-api-provider-azure
+  # - ./cluster-api-provider-azure
   - ./cluster-api-provider-kubevirt
   - ./cluster-curator-controller
   - ./cluster-image-set-controller
@@ -43,8 +43,6 @@ resources:
   - ./registration-operator
   - ./work 
 
-# Is addon-framework deprecated?
-# will we building the assisted installer pipeline within our release-ocm branches or will they be building their own
-# aws-encryption-provider is built from master
-# cluster-api repos weren't onboarded before can we get them onboard to konflux here?
+# Is addon-framework deprecated? The repo says it's a PoC
+# All other repos are deprecated
 # hive is built from master
