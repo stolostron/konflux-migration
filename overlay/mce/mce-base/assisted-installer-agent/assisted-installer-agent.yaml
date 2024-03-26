@@ -9,4 +9,4 @@
   value: https://github.com/openshift/assisted-installer-agent
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Dockerfile.assisted_installer_agent"
