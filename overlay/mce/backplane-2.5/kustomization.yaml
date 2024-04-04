@@ -24,6 +24,10 @@ patches:
       kind: Component
       name: cluster-api.*
     path: openshift-branch-patch.yaml
+  - target:
+      kind: Component
+      name: hive.*
+    path: hive-branch-patch.yaml
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
@@ -45,10 +49,3 @@ patches:
     target:
       kind: Component
       name: "aws-encryption-provider.*"
-  - patch: |-
-      - op: replace
-        path: /spec/source/git/revision
-        value: master
-    target:
-      kind: Component
-      name: "hive"

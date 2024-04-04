@@ -29,7 +29,7 @@ resources:
   - ./discovery-operator
   - ./discovery-operator-tests
   - ./discovery-testserver
-#  - ./hive 
+  - ./hive 
   - ./hypershift-addon-operator 
   - ./hypershift-release
   - ./kube-rbac-proxy 
@@ -45,4 +45,3 @@ resources:
 
 # Is addon-framework deprecated? The repo says it's a PoC
 # All other repos are deprecated
-# hive is built from master
