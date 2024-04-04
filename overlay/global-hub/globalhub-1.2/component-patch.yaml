@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/application
+  value: release-globalhub-12
+- op: replace
+  path: /spec/source/git/revision
+  value: release-2.10
