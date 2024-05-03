@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: kube-state-metrics
+- op: replace
+  path: /spec/componentName
+  value: kube-state-metrics
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/kube-state-metrics
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Containerfile.operator"
