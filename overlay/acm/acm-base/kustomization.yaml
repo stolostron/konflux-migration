@@ -20,6 +20,24 @@ resources:
   - ./insights-metrics
   - ./klusterlet-addon-controller
   - ./kube-rbac-proxy
+  - ./kube-state-metrics
+  - ./kubevirt-addon-controller
+  - ./kubevirt-hyperconverged-cluster-operator
+  - ./kubevirt-hyperconverged-operator
+  - ./kubevirt-webhooks
+  - ./logging-operator
+  - ./marketplace-operator
+  - ./metering-operator
+  - ./monitoring-operator
+  - ./network-addons-operator
+  - ./olm-catalog
+  - ./operator-lifecycle-manager
+  - ./operatorhubio-catalog
+  - ./operatorhubio-catalog-source
+  - ./operatorhubio-install
+  - ./operators
+  - ./packageserver
+  - ./prometheus-operator
   - ./metrics-collector
   - ./multicloud-integrations
   - ./multicluster-global-hub-operator
