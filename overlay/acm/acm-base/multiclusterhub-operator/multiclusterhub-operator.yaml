@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/multiclusterhub-operator
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "build/Dockerfile.rhtap"

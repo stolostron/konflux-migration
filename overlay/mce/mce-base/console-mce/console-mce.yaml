@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/console
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Containerfile.mce.rhtap"
+  value: "Containerfile.mce.konflux"

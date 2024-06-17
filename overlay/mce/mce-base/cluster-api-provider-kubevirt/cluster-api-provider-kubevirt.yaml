@@ -9,4 +9,4 @@
   value: https://github.com/openshift/cluster-api-provider-kubevirt
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Dockerfile.rhtap"

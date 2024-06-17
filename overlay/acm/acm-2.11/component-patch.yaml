@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/application
+  value: release-acm-211
+- op: replace
+  path: /spec/source/git/revision
+  value: release-2.11

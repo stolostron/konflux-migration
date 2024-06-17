@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/insights-metrics
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Dockerfile.rhtap"

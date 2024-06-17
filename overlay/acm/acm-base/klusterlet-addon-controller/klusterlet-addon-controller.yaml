@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/klusterlet-addon-controller
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "build/Dockerfile"
+  value: "Dockerfile.rhtap"

@@ -6,11 +6,11 @@ resources:
   # - ./addon-framework
   - ./addon-manager
   # - ./apiserver-network-proxy
-  - ./assisted-image-service
-  - ./assisted-installer
-  - ./assisted-installer-agent
-  - ./assisted-installer-controller
-  - ./assisted-service
+  # - ./assisted-image-service
+  # - ./assisted-installer
+  # - ./assisted-installer-agent
+  # - ./assisted-installer-controller
+  # - ./assisted-service
   # - ./aws-encryption-provider
   - ./backplane-must-gather
   - ./backplane-operator
@@ -27,8 +27,8 @@ resources:
   - ./clusterlifecycle-state-metrics
   - ./console-mce
   - ./discovery-operator
-  - ./discovery-operator-tests
-  - ./discovery-testserver
+  # - ./discovery-operator-tests
+  # - ./discovery-testserver
   - ./hive 
   - ./hypershift-addon-operator 
   - ./hypershift-release
@@ -43,5 +43,7 @@ resources:
   - ./registration-operator
   - ./work 
 
-# Is addon-framework deprecated? The repo says it's a PoC
+# Assisted Installer will be self-managed
+# Discovery repos aren't published
+# Postgres still needs work
 # All other repos are deprecated

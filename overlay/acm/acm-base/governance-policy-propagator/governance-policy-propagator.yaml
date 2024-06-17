@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/governance-policy-propagator
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile.rhtap"
+  value: "build/Dockerfile.rhtap"

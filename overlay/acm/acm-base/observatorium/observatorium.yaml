@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/observatorium
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Containerfile.operator"

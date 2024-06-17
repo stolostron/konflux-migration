@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/prometheus-operator
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "cmd/prometheus-config-reloader/Dockerfile"
+  value: "cmd/prometheus-config-reloader/Containerfile.operator"

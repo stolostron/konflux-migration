@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/submariner-addon
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Dockerfile.konflux"

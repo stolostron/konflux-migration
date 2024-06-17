@@ -9,4 +9,4 @@
   value: https://github.com/stolostron/governance-policy-addon-controller
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "build/Dockerfile"
+  value: "build/Dockerfile.rhtap"

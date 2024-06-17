@@ -1,0 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+nameSuffix: -acm-211
+resources:
+  - ../acm-base
+
+patches:
+  - target:
+      kind: Application
+    path: application-patch.yaml
+  - target:
+      kind: Component
+    path: component-patch.yaml
+  - target:
+      kind: Component
+      name: assisted.*
+    path: ocm-branch-patch.yaml
+  - target:
+      kind: Component
+      name: hypershift-release.*
+    path: hypershift-branch-patch.yaml
+  - target:
+      kind: Component
+      name: cluster-api.*
+    path: openshift-branch-patch.yaml

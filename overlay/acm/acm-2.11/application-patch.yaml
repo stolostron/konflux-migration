@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: release
+- op: replace
+  path: /spec/description
+  value: "Pipeline for ACM 2.11"
+- op: replace
+  path: /spec/displayName
+  value: "ACM 2.11"

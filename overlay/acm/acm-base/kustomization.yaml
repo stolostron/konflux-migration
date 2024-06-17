@@ -3,7 +3,8 @@ kind: Kustomization
   
 resources:
   - application.yaml
-  - ./analytics-recommends
+  # - ./acm-inspector
+  # - ./analytics-recommends
   - ./cert-policy-controller
   - ./cluster-backup-controller
   - ./cluster-permission
@@ -21,26 +22,26 @@ resources:
   - ./klusterlet-addon-controller
   - ./kube-rbac-proxy
   - ./kube-state-metrics
-  - ./kubevirt-addon-controller
-  - ./kubevirt-hyperconverged-cluster-operator
-  - ./kubevirt-hyperconverged-operator
-  - ./kubevirt-webhooks
-  - ./logging-operator
-  - ./marketplace-operator
-  - ./metering-operator
-  - ./monitoring-operator
-  - ./network-addons-operator
-  - ./olm-catalog
-  - ./operator-lifecycle-manager
-  - ./operatorhubio-catalog
-  - ./operatorhubio-catalog-source
-  - ./operatorhubio-install
-  - ./operators
-  - ./packageserver
-  - ./prometheus-operator
+  # - ./kubevirt-addon-controller
+  # - ./kubevirt-hyperconverged-cluster-operator
+  # - ./kubevirt-hyperconverged-operator
+  # - ./kubevirt-webhooks
+  # - ./logging-operator
+  # - ./marketplace-operator
+  # - ./metering-operator
+  # - ./monitoring-operator
+  # - ./network-addons-operator
+  # - ./olm-catalog
+  # - ./operator-lifecycle-manager
+  # - ./operatorhubio-catalog
+  # - ./operatorhubio-catalog-source
+  # - ./operatorhubio-install
+  # - ./operators
+  # - ./packageserver
+  # - ./prometheus-operator
   - ./metrics-collector
   - ./multicloud-integrations
-  - ./multicluster-global-hub-operator
+  # - ./multicluster-global-hub-operator
   - ./multicluster-observability-operator
   - ./multicluster-operators-application
   - ./multicluster-operators-channel
@@ -49,7 +50,7 @@ resources:
   - ./must-gather
   - ./node-exporter
   - ./observatorium
-  - ./observatorium-operatorr
+  - ./observatorium-operator
   - ./prometheus
   - ./prometheus-alertmanager
   - ./prometheus-config-reloader
@@ -57,10 +58,15 @@ resources:
   - ./rbac-query-proxy
   - ./search-collector
   - ./search-indexer
-  - ./search-operator-bundle
+  # - ./search-operator-bundle
   - ./search-v2-api
   - ./search-v2-operator
   - ./submariner-addon
   - ./thanos
   - ./thanos-receive-controller
   - ./volsync-addon-controller
+
+# acm-inspector is for 2.12+
+# global-hub is self-managed
+# kubevirt repos are unknown
+# all other repos deprecated

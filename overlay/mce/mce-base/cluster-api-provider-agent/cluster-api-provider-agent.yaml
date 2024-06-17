@@ -9,4 +9,4 @@
   value: https://github.com/openshift/cluster-api-provider-agent
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "Dockerfile"
+  value: "Dockerfile.rhtap"
