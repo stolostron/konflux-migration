@@ -3,21 +3,10 @@ kind: Kustomization
   
 resources:
   - application.yaml
-  # - ./addon-framework
   - ./addon-manager
-  # - ./apiserver-network-proxy
-  # - ./assisted-image-service
-  # - ./assisted-installer
-  # - ./assisted-installer-agent
-  # - ./assisted-installer-controller
-  # - ./assisted-service
-  # - ./aws-encryption-provider
   - ./backplane-must-gather
   - ./backplane-operator
-  # - ./cluster-api
-  # - ./cluster-api-aws-controller
   - ./cluster-api-provider-agent
-  # - ./cluster-api-provider-azure
   - ./cluster-api-provider-kubevirt
   - ./cluster-curator-controller
   - ./cluster-image-set-controller
@@ -27,11 +16,10 @@ resources:
   - ./clusterlifecycle-state-metrics
   - ./console-mce
   - ./discovery-operator
-  # - ./discovery-operator-tests
-  # - ./discovery-testserver
   - ./hive 
   - ./hypershift-addon-operator 
   - ./hypershift-release
+  - ./image-based-install-operator
   - ./kube-rbac-proxy 
   - ./managed-serviceaccount 
   - ./managedcluster-import-controller-addon
@@ -46,4 +34,17 @@ resources:
 # Assisted Installer will be self-managed
 # Discovery repos aren't published
 # Postgres still needs work
-# All other repos are deprecated
+# All other repos are deprecated or managed elsewhere
+  # - ./addon-framework
+  # - ./apiserver-network-proxy
+  # - ./assisted-image-service
+  # - ./assisted-installer
+  # - ./assisted-installer-agent
+  # - ./assisted-installer-controller
+  # - ./assisted-service
+  # - ./aws-encryption-provider
+  # - ./cluster-api
+  # - ./cluster-api-aws-controller
+  # - ./cluster-api-provider-azure
+  # - ./discovery-operator-tests
+  # - ./discovery-testserver

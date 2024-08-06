@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/application
+  value: release-mce-27
+- op: replace
+  path: /spec/source/git/revision
+  value: backplane-2.7

@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - application.yaml
   # - ./acm-inspector
-  # - ./analytics-recommends
   - ./cert-policy-controller
   - ./cluster-backup-controller
   - ./cluster-permission
@@ -16,12 +15,42 @@ resources:
   - ./governance-policy-propagator
   - ./grafana
   - ./grafana-dashboard-loader
-  - ./iam-policy-controller
   - ./insights-client
   - ./insights-metrics
   - ./klusterlet-addon-controller
   - ./kube-rbac-proxy
   - ./kube-state-metrics
+  - ./metrics-collector
+  - ./multicloud-integrations
+  - ./multicluster-observability-operator
+  - ./multicluster-operators-application
+  - ./multicluster-operators-channel
+  - ./multicluster-operators-subscription
+  - ./multiclusterhub-operator
+  - ./must-gather
+  - ./node-exporter
+  - ./observatorium
+  - ./observatorium-operator
+  - ./prometheus
+  - ./prometheus-alertmanager
+  - ./prometheus-config-reloader
+  - ./prometheus-operator
+  - ./rbac-query-proxy
+  - ./search-collector
+  - ./search-indexer
+  - ./search-v2-api
+  - ./search-v2-operator
+  - ./submariner-addon
+  - ./thanos
+  - ./thanos-receive-controller
+  - ./volsync-addon-controller
+
+# acm-inspector is for 2.12+
+# global-hub is self-managed
+# kubevirt repos are unknown
+# all other repos deprecated
+  # - ./analytics-recommends
+  # - ./iam-policy-controller
   # - ./kubevirt-addon-controller
   # - ./kubevirt-hyperconverged-cluster-operator
   # - ./kubevirt-hyperconverged-operator
@@ -39,34 +68,5 @@ resources:
   # - ./operators
   # - ./packageserver
   # - ./prometheus-operator
-  - ./metrics-collector
-  - ./multicloud-integrations
   # - ./multicluster-global-hub-operator
-  - ./multicluster-observability-operator
-  - ./multicluster-operators-application
-  - ./multicluster-operators-channel
-  - ./multicluster-operators-subscription
-  - ./multiclusterhub-operator
-  - ./must-gather
-  - ./node-exporter
-  - ./observatorium
-  - ./observatorium-operator
-  - ./prometheus
-  - ./prometheus-alertmanager
-  - ./prometheus-config-reloader
-  - ./prometheus-operator
-  - ./rbac-query-proxy
-  - ./search-collector
-  - ./search-indexer
   # - ./search-operator-bundle
-  - ./search-v2-api
-  - ./search-v2-operator
-  - ./submariner-addon
-  - ./thanos
-  - ./thanos-receive-controller
-  - ./volsync-addon-controller
-
-# acm-inspector is for 2.12+
-# global-hub is self-managed
-# kubevirt repos are unknown
-# all other repos deprecated
