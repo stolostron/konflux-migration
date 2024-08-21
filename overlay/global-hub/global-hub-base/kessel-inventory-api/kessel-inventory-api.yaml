@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: kessel-inventory-api
+- op: replace
+  path: /spec/componentName
+  value: kessel-inventory-api
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/project-kessel/inventory-api
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"

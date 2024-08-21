@@ -16,3 +16,7 @@ patches:
       kind: Component
       name: glo-grafana
     path: glo-grafana-branch-patch.yaml
+  - target:
+      kind: Component
+      name: kessel-inventory-api
+    path: kessel-inventory-api-branch-patch.yaml
