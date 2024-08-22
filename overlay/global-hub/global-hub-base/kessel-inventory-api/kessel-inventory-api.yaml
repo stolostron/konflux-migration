@@ -6,7 +6,7 @@
   value: kessel-inventory-api
 - op: replace
   path: /spec/source/git/url
-  value: https://github.com/project-kessel/inventory-api
+  value: https://github.com/stolostron/inventory-api
 - op: replace
   path: /spec/source/git/dockerfileUrl
   value: "Dockerfile"
