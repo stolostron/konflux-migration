@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: acm-cli
+- op: replace
+  path: /spec/componentName
+  value: acm-cli
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/acm-cli
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile.rhtap"

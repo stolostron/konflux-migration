@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - application.yaml
   # - ./acm-inspector
+  - ./acm-cli
   - ./cert-policy-controller
   - ./cluster-backup-controller
   - ./cluster-permission
