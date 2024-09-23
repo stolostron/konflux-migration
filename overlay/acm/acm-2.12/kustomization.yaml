@@ -22,5 +22,9 @@ patches:
     path: hypershift-branch-patch.yaml
   - target:
       kind: Component
+      name: multicluster-observability-addon.*
+    path: multicluster-observability-addon-branch-patch.yaml
+  - target:
+      kind: Component
       name: cluster-api.*
     path: openshift-branch-patch.yaml

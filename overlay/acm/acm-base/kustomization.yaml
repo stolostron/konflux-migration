@@ -23,6 +23,7 @@ resources:
   - ./kube-state-metrics
   - ./metrics-collector
   - ./multicloud-integrations
+  - ./multicluster-observability-addon
   - ./multicluster-observability-operator
   - ./multicluster-operators-application
   - ./multicluster-operators-channel

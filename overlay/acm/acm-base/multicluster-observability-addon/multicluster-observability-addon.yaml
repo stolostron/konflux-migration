@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: multicluster-observability-addon
+- op: replace
+  path: /spec/componentName
+  value: multicluster-observability-addon
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/multicluster-observability-addon
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"
