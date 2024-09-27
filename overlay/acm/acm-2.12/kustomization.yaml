@@ -28,3 +28,7 @@ patches:
       kind: Component
       name: cluster-api.*
     path: openshift-branch-patch.yaml
+  - target:
+      kind: Component
+      name: siteconfig.*
+    path: siteconfig-branch-patch.yaml
