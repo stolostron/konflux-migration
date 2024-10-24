@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+nameSuffix: -acm-212
+resources:
+  - ../acm-operator-bundle-base
+
+patches:
+  - target:
+      kind: Application
+    path: application-patch.yaml
+  - target:
+      kind: Component
+    path: component-patch.yaml
