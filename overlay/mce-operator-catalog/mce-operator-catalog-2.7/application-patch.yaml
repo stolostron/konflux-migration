@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: catalog-release
+- op: replace
+  path: /spec/description
+  value: "Catalog Build for MCE 2.7"
+- op: replace
+  path: /spec/displayName
+  value: "MCE Catalog 2.7"

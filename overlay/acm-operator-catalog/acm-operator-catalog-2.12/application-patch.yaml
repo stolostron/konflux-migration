@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: catalog-release
+- op: replace
+  path: /spec/description
+  value: "Catalog Build for ACM 2.12"
+- op: replace
+  path: /spec/displayName
+  value: "ACM Catalog 2.12"

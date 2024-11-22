@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: mce-operator-catalog
+- op: replace
+  path: /spec/componentName
+  value: mce-operator-catalog
+- op: replace
+  path: /spec/source/git/url
+  value:  https://github.com/stolostron/acm-mce-operator-catalogs
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "catalogs/mce-custom-registry/Containerfile"

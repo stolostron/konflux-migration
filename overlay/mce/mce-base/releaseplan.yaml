@@ -1,0 +1,30 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true'
+   release.appstudio.openshift.io/standing-attribution: 'true'
+ name: dev-publish
+ namespace: dev-workspace
+spec:
+ application: appName
+ data:
+   mapping:
+     components:
+       - name: demo-component-1
+         repository: registry/destination-image-repository-1
+         tags: [latest]
+       - name: demo-component-2
+         repository: registry/destination-image-repository-2
+         tags: [latest]
+ pipeline:
+   pipelineRef: 
+     resolver: git
+     params:
+       - name: url
+         value: "https://github.com/stolostron/release-service-catalog.git"
+       - name: revision
+         value: minimum-verification
+       - name: pathInRepo
+         value: "pipelines/tenant-push-to-external-registry/tenant-push-to-external-registry.yaml"
+   serviceAccountName: appstudio-pipeline 
