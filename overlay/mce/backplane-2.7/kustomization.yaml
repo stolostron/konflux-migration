@@ -28,6 +28,10 @@ patches:
       kind: Component
       name: hive.*
     path: hive-branch-patch.yaml
+  - target:
+      kind: Component
+      name: cluster-api-provider-agent.*
+    path: cluster-api-provider-agent-branch-patch.yaml
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
@@ -35,13 +39,6 @@ patches:
     target:
       kind: Component
       name: "apiserver-network-proxy.*"
-  - patch: |-
-      - op: replace
-        path: /spec/source/git/revision
-        value: release-ocm-2.12
-    target:
-      kind: Component
-      name: "cluster-api-provider-agent.*"
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
