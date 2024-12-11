@@ -4,3 +4,8 @@
 - op: replace
   path: /spec/source/git/revision
   value: main
+- op: add
+  path: /spec/build-nudges-ref
+  value: [
+    "multicluster-global-hub-operator-bundle-1-4"
+  ]
