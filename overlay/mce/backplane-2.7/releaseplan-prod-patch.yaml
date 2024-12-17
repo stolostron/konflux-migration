@@ -1,0 +1,22 @@
+- op: replace
+  path: /spec/application
+  value: release-mce-27
+- op: replace
+  path: /spec/data/mapping
+  value: {
+    components: [
+      {name: cluster-image-set-controller-mce-27, repository: registry.redhat.io/temp_cluster-image-set-controller-mce-27, tags: [latest]},
+      {name: hive-mce-27, repository: registry.redhat.io/temp_hive-mce-27, tags: [latest]},
+      {name: image-27d-install-operator-mce-27, repository: registry.redhat.io/temp_image-27d-install-operator-mce-27, tags: [latest]},
+      {name: kube-rbac-proxy-mce-27, repository: registry.redhat.io/temp_kube-rbac-proxy-mce-27, tags: [latest]},
+      {name: clusterlifecycle-state-metrics-mce-27, repository: registry.redhat.io/temp_clusterlifecycle-state-metrics-mce-27, tags: [latest]},
+      {name: console-mce-mce-27, repository: registry.redhat.io/temp_console-mce-mce-27, tags: [latest]},
+      {name: clusterclaims-controller-mce-27, repository: registry.redhat.io/temp_clusterclaims-controller-mce-27, tags: [latest]},
+      {name: provider-credential-controller-mce-27, repository: registry.redhat.io/temp_provider-credential-controller-mce-27, tags: [latest]},
+      {name: cluster-curator-controller-mce-27, repository: registry.redhat.io/temp_cluster-curator-controller-mce-27, tags: [latest]},
+      {name: hypershift-release-mce-27, repository: registry.redhat.io/temp_hypershift-release-mce-27, tags: [latest]},
+      {name: cluster-proxy-mce-27, repository: registry.redhat.io/temp_cluster-proxy-mce-27, tags: [latest]},
+      {name: discovery-operator-mce-27, repository: registry.redhat.io/temp_discovery-operator-mce-27, tags: [latest]},
+      {name: backplane-operator-mce-27, repository: registry.redhat.io/temp_backplane-operator-mce-27, tags: [latest]}
+    ]
+  }

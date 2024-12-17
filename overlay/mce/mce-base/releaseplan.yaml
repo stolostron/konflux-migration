@@ -4,10 +4,10 @@ metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true'
    release.appstudio.openshift.io/standing-attribution: 'true'
- name: dev-publish
- namespace: dev-workspace
+ name: dev-publish-mce-27
+ namespace: crt-redhat-acm-tenant
 spec:
- application: appName
+ application: release-mce-27
  data:
    mapping:
      components:
@@ -17,14 +17,14 @@ spec:
        - name: demo-component-2
          repository: registry/destination-image-repository-2
          tags: [latest]
- pipeline:
+ tenantPipeline:
    pipelineRef: 
      resolver: git
      params:
        - name: url
-         value: "https://github.com/stolostron/release-service-catalog.git"
+         value: "https://github.com/scoheb/release-service-catalog"
        - name: revision
-         value: minimum-verification
+         value: tenant-release-pipelines
        - name: pathInRepo
          value: "pipelines/tenant-push-to-external-registry/tenant-push-to-external-registry.yaml"
    serviceAccountName: appstudio-pipeline 
