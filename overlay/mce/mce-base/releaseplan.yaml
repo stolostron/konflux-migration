@@ -4,10 +4,10 @@ metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true'
    release.appstudio.openshift.io/standing-attribution: 'true'
- name: dev-publish-mce-27
+ name: dev-publish
  namespace: crt-redhat-acm-tenant
 spec:
- application: release-mce-27
+ application: dev-application
  data:
    mapping:
      components:

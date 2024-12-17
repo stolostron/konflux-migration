@@ -13,6 +13,9 @@ patches:
       kind: Component
     path: component-patch.yaml
   - target:
+      kind: ReleasePlan
+    path: releaseplan-dev-patch.yaml
+  - target:
       kind: Component
       name: assisted.*
     path: ocm-branch-patch.yaml
