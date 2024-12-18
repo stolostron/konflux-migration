@@ -4,7 +4,7 @@ metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true'
    release.appstudio.openshift.io/standing-attribution: 'true'
- name: dev-publish
+ name: publish
  namespace: crt-redhat-acm-tenant
 spec:
  application: dev-application
@@ -27,4 +27,4 @@ spec:
          value: tenant-release-pipelines
        - name: pathInRepo
          value: "pipelines/tenant-push-to-external-registry/tenant-push-to-external-registry.yaml"
-   serviceAccountName: appstudio-pipeline 
+   serviceAccountName: appstudio-pipeline
