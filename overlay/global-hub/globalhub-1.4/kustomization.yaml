@@ -24,3 +24,7 @@ patches:
       kind: Component
       name: postgres-exporter
     path: postgres-exporter-branch-patch.yaml
+  - target:
+      kind: Component
+      name: multicluster-global-hub(?!-operator-bundle)
+    path: nudge-bundle.yaml
