@@ -10,3 +10,6 @@
 - op: replace
   path: /spec/source/git/dockerfileUrl
   value: "Dockerfile"
+- op: add
+  path: /spec/build-nudges-ref
+  value: mce-dev-catalog
