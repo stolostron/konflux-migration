@@ -1,3 +1,9 @@
 - op: replace
   path: /spec/source/git/revision
   value: release-4.17
+- op: add
+  path: /spec/build-nudges-ref
+  value: [
+    "must-gather-acm-213",
+    "backplane-must-gather-mce-28"
+  ]
