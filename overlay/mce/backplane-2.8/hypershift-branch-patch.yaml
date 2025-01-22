@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/source/git/revision
-  value: release-4.17
+  value: release-4.18
 - op: add
   path: /spec/build-nudges-ref
   value: [
