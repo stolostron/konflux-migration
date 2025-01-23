@@ -22,9 +22,8 @@ patches:
     path: kessel-inventory-api-branch-patch.yaml
   - target:
       kind: Component
-      name: postgres-exporter
-    path: postgres-exporter-branch-patch.yaml
+    path: nudge-bundle.yaml
   - target:
       kind: Component
-      name: multicluster-global-hub(?!-operator-bundle)
-    path: nudge-bundle.yaml
+      name: multicluster-global-hub-operator-bundle
+    path: remove-nudge-bundle.yaml
