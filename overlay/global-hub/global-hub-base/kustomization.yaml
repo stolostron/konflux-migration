@@ -6,6 +6,7 @@ resources:
   - ./glo-grafana
   - ./kessel-inventory-api
   - ./multicluster-global-hub-operator
+  - ./multicluster-global-hub-operator-bundle
   - ./multicluster-global-hub-agent
   - ./multicluster-global-hub-manager
   - ./postgres-exporter

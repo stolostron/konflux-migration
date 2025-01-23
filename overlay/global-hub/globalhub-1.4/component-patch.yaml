@@ -3,4 +3,4 @@
   value: release-globalhub-1-4
 - op: replace
   path: /spec/source/git/revision
-  value: main
+  value: release-2.13

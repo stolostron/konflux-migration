@@ -1,0 +1,5 @@
+- op: add
+  path: /spec/build-nudges-ref
+  value: [
+    "multicluster-global-hub-operator-bundle-globalhub-1-4"
+  ]
