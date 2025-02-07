@@ -22,6 +22,10 @@ patches:
     path: kessel-inventory-api-branch-patch.yaml
   - target:
       kind: Component
+      name: postgres-exporter
+    path: postgres-exporter-branch-patch.yaml
+  - target:
+      kind: Component
     path: nudge-bundle.yaml
   - target:
       kind: Component

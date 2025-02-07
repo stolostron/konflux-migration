@@ -9,4 +9,5 @@
   value: https://github.com/stolostron/multicluster-global-hub
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "agent/Dockerfile"
+  #value: "agent/Dockerfile"
+  value: "agent/Containerfile.agent"

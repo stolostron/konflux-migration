@@ -9,4 +9,5 @@
   value: https://github.com/stolostron/multicluster-global-hub
 - op: replace
   path: /spec/source/git/dockerfileUrl
-  value: "manager/Dockerfile"
+  #value: "manager/Dockerfile"
+  value: "manager/Containerfile.manager"
