@@ -8,8 +8,8 @@
   path: /spec/data/mapping
   value:
     components: 
-      - name: operator-bundle-mce-27
+      - name: mce-operator-bundle-mce-27
         repository: quay.io/acm-p/mce-operator-bundle
     defaults:
       tags:
-        - "2.7.3-{{  incrementer  }}"
+        - "2.7.3-{{ git_short_sha }}"
