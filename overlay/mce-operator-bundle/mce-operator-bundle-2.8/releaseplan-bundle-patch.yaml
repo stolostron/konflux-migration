@@ -3,13 +3,13 @@
   value: publish-bundle
 - op: replace
   path: /spec/application
-  value: bundle-release-mce-27
+  value: bundle-release-mce-28
 - op: replace
   path: /spec/data/mapping
   value:
     components: 
-      - name: mce-operator-bundle-mce-27
+      - name: mce-operator-bundle-mce-28
         repository: quay.io/acm-d/mce-operator-bundle
     defaults:
       tags:
-        - "2.7.3-{{ git_short_sha }}"
+        - "2.8.0-{{ git_short_sha }}"

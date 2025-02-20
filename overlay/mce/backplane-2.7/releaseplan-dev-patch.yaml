@@ -6,32 +6,60 @@
   value: release-mce-27
 - op: replace
   path: /spec/data/mapping
-  value: {
-    components: [
-      {name: addon-manager-mce-27, repository: quay.io/acm-p/addon-manager-mce-27, tags: [latest]},
-      {name: backplane-must-gather-mce-27, repository: quay.io/acm-p/mce-must-gather-rhel8, tags: [latest]},
-      {name: backplane-operator-mce-27, repository: quay.io/acm-p/backplane-operator-mce-27, tags: [latest]},
-      {name: cluster-api-provider-kubevirt-mce-27, repository: quay.io/acm-p/cluster-api-provider-kubevirt-mce-27, tags: [latest]},
-      {name: cluster-curator-controller-mce-27, repository: quay.io/acm-p/cluster-curator-controller-mce-27, tags: [latest]},
-      {name: cluster-image-set-controller-mce-27, repository: quay.io/acm-p/cluster-image-set-controller-mce-27, tags: [latest]},
-      {name: cluster-proxy-addon-mce-27, repository: quay.io/acm-p/cluster-proxy-addon-mce-27, tags: [latest]},
-      {name: cluster-proxy-mce-27, repository: quay.io/acm-p/cluster-proxy-mce-27, tags: [latest]},
-      {name: clusterclaims-controller-mce-27, repository: quay.io/acm-p/clusterclaims-controller-mce-27, tags: [latest]},
-      {name: clusterlifecycle-state-metrics-mce-27, repository: quay.io/acm-p/clusterlifecycle-state-metrics-mce-27, tags: [latest]},
-      {name: console-mce-mce-27, repository: quay.io/acm-p/console-mce-mce-27, tags: [latest]},
-      {name: discovery-operator-mce-27, repository: quay.io/acm-p/discovery-operator-mce-27, tags: [latest]},
-      {name: hive-mce-27, repository: quay.io/acm-p/hive-mce-27, tags: [latest]},
-      {name: hypershift-addon-operator-mce-27, repository: quay.io/acm-p/hypershift-addon-operator-mce-27, tags: [latest]},
-      {name: hypershift-release-mce-27, repository: quay.io/acm-p/hypershift-release-mce-27, tags: [latest]},
-      {name: image-based-install-operator-mce-27, repository: quay.io/acm-p/image-27d-install-operator-mce-27, tags: [latest]},
-      {name: kube-rbac-proxy-mce-27, repository: quay.io/acm-p/kube-rbac-proxy-mce-27, tags: [latest]},
-      {name: managed-serviceaccount-mce-27, repository: quay.io/acm-p/managed-serviceaccount-mce-27, tags: [latest]},
-      {name: managedcluster-import-controller-addon-mce-27, repository: quay.io/acm-p/managedcluster-import-controller-rhel8, tags: [latest]},
-      {name: multicloud-manager-mce-27, repository: quay.io/acm-p/multicloud-manager-rhel8, tags: [latest]},
-      {name: placement-mce-27, repository: quay.io/acm-p/placement-rhel8, tags: [latest]},
-      {name: provider-credential-controller-mce-27, repository: quay.io/acm-p/provider-credential-controller-mce-27, tags: [latest]},
-      {name: registration-mce-27, repository: quay.io/acm-p/registration-rhel8, tags: [latest]},
-      {name: registration-operator-mce-27, repository: quay.io/acm-p/registration-rhel8-operator, tags: [latest]},
-      {name: work-mce-27, repository: quay.io/acm-p/work-rhel8, tags: [latest]}
-    ]
-  }
+  value:
+    components: 
+      - name: addon-manager-mce-27
+        repository: quay.io/acm-d/addon-manager-rhel9
+      - name: backplane-must-gather-mce-27
+        repository: quay.io/acm-d/must-gather-rhel9
+      - name: backplane-operator-mce-27
+        repository: quay.io/acm-d/backplane-rhel9-operator
+      - name: cluster-api-provider-kubevirt-mce-27
+        repository: quay.io/acm-d/cluster-api-provider-kubevirt-rhel9
+      - name: cluster-curator-controller-mce-27
+        repository: quay.io/acm-d/cluster-curator-controller-rhel9
+      - name: cluster-image-set-controller-mce-27
+        repository: quay.io/acm-d/cluster-image-set-controller-rhel9
+      - name: cluster-proxy-addon-mce-27
+        repository: quay.io/acm-d/cluster-proxy-addon-rhel9
+      - name: cluster-proxy-mce-27
+        repository: quay.io/acm-d/cluster-proxy-rhel9
+      - name: clusterclaims-controller-mce-27
+        repository: quay.io/acm-d/clusterclaims-controller-rhel9
+      - name: clusterlifecycle-state-metrics-mce-27
+        repository: quay.io/acm-d/clusterlifecycle-state-metrics-rhel9
+      - name: console-mce-mce-27
+        repository: quay.io/acm-d/console-mce-rhel9
+      - name: discovery-operator-mce-27
+        repository: quay.io/acm-d/discovery-rhel9
+      - name: hive-mce-27
+        repository: quay.io/acm-d/hive-rhel9
+      - name: hypershift-addon-rhel9-operator
+        repository: quay.io/acm-d/hypershift-addon-operator-mce-27
+      - name: hypershift-release-mce-27
+        repository: quay.io/acm-d/hypershift-rhel9-operator
+      - name: image-based-install-operator-mce-27
+        repository: quay.io/acm-d/image-27d-install-rhel9
+      - name: kube-rbac-proxy-mce-27
+        repository: quay.io/acm-d/kube-rbac-proxy-mce-rhel9
+      - name: managed-serviceaccount-mce-27
+        repository: quay.io/acm-d/managed-serviceaccount-rhel9
+      - name: managedcluster-import-controller-addon-mce-27
+        repository: quay.io/acm-d/managedcluster-import-controller-rhel9
+      - name: multicloud-manager-mce-27
+        repository: quay.io/acm-d/multicloud-manager-rhel9
+      - name: placement-mce-27
+        repository: quay.io/acm-d/placement-rhel9
+      - name: provider-credential-controller-mce-27
+        repository: quay.io/acm-d/provider-credential-controller-rhel9
+      - name: registration-mce-27
+        repository: quay.io/acm-d/registration-rhel9
+      - name: registration-operator-mce-27
+        repository: quay.io/acm-d/registration-operator-rhel9
+      - name: work-mce-27
+        repository: quay.io/acm-d/work-rhel9
+    defaults:
+      tags:
+        - "2.7.0-{{  incrementer  }}"
+        - "2.7.0-{{ timestamp }}"
+        - "2.7.0-{{ git_short_sha }}"
