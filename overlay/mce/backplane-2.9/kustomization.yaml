@@ -12,9 +12,9 @@ patches:
   - target:
       kind: ReleasePlan
     path: releaseplan-dev-patch.yaml
-  - target:
-      kind: ReleasePlan
-    path: releaseplan-prod-patch.yaml
+  # - target:
+  #     kind: ReleasePlan
+  #   path: releaseplan-prod-patch.yaml
   - target:
       kind: Component
     path: component-patch.yaml
