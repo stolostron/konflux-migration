@@ -3,6 +3,7 @@ kind: Kustomization
   
 resources:
   - application.yaml
+  - releaseplan.yaml
   - ./addon-manager
   - ./backplane-must-gather
   - ./backplane-operator

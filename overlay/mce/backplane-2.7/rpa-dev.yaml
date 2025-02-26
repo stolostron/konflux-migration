@@ -1,0 +1,80 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlanAdmission
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true' 
+ name: rpa-dev-mce-27
+ namespace: crt-redhat-acm-tenant
+spec:
+  applications: 
+    - release-mce-27
+  origin: crt-redhat-acm-tenant
+  policy: always-pass-policy
+  data:
+    mapping:
+      components: 
+        - name: addon-manager-mce-27
+          repository: quay.io/acm-d/addon-manager-rhel9
+        - name: backplane-must-gather-mce-27
+          repository: quay.io/acm-d/must-gather-rhel9
+        - name: backplane-operator-mce-27
+          repository: quay.io/acm-d/backplane-rhel9-operator
+        - name: cluster-api-provider-kubevirt-mce-27
+          repository: quay.io/acm-d/cluster-api-provider-kubevirt-rhel9
+        - name: cluster-curator-controller-mce-27
+          repository: quay.io/acm-d/cluster-curator-controller-rhel9
+        - name: cluster-image-set-controller-mce-27
+          repository: quay.io/acm-d/cluster-image-set-controller-rhel9
+        - name: cluster-proxy-addon-mce-27
+          repository: quay.io/acm-d/cluster-proxy-addon-rhel9
+        - name: cluster-proxy-mce-27
+          repository: quay.io/acm-d/cluster-proxy-rhel9
+        - name: clusterclaims-controller-mce-27
+          repository: quay.io/acm-d/clusterclaims-controller-rhel9
+        - name: clusterlifecycle-state-metrics-mce-27
+          repository: quay.io/acm-d/clusterlifecycle-state-metrics-rhel9
+        - name: console-mce-mce-27
+          repository: quay.io/acm-d/console-mce-rhel9
+        - name: discovery-operator-mce-27
+          repository: quay.io/acm-d/discovery-rhel9
+        - name: hive-mce-27
+          repository: quay.io/acm-d/hive-rhel9
+        - name: hypershift-addon-rhel9-operator
+          repository: quay.io/acm-d/hypershift-addon-operator-mce-27
+        - name: hypershift-release-mce-27
+          repository: quay.io/acm-d/hypershift-rhel9-operator
+        - name: image-based-install-operator-mce-27
+          repository: quay.io/acm-d/image-27d-install-rhel9
+        - name: kube-rbac-proxy-mce-27
+          repository: quay.io/acm-d/kube-rbac-proxy-mce-rhel9
+        - name: managed-serviceaccount-mce-27
+          repository: quay.io/acm-d/managed-serviceaccount-rhel9
+        - name: managedcluster-import-controller-addon-mce-27
+          repository: quay.io/acm-d/managedcluster-import-controller-rhel9
+        - name: multicloud-manager-mce-27
+          repository: quay.io/acm-d/multicloud-manager-rhel9
+        - name: placement-mce-27
+          repository: quay.io/acm-d/placement-rhel9
+        - name: provider-credential-controller-mce-27
+          repository: quay.io/acm-d/provider-credential-controller-rhel9
+        - name: registration-mce-27
+          repository: quay.io/acm-d/registration-rhel9
+        - name: registration-operator-mce-27
+          repository: quay.io/acm-d/registration-operator-rhel9
+        - name: work-mce-27
+          repository: quay.io/acm-d/work-rhel9
+      defaults:
+        tags:
+          - "2.7.3-{{ git_short_sha }}"
+  pipeline:
+    pipelineRef: 
+      resolver: git
+      params:
+        - name: url
+          value: "https://github.com/konflux-ci/release-service-catalog.git"
+        - name: revision
+          value: development
+        - name: pathInRepo
+          value: "pipelines/managed/push-to-external-registry/push-to-external-registry.yaml"
+    timeouts:
+      pipeline: "4h0m0s"

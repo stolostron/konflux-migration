@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: memcached-exporter
+- op: replace
+  path: /spec/componentName
+  value: memcached-exporter
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/stolostron/memcached_exporter
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile"

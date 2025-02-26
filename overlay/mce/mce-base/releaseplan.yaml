@@ -1,0 +1,30 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true'
+   release.appstudio.openshift.io/standing-attribution: 'true'
+ name: publish
+ namespace: crt-redhat-acm-tenant
+spec:
+ application: dev-application
+ data:
+   mapping:
+     components:
+       - name: demo-component-1
+         repository: registry/destination-image-repository-1
+         tags: [latest]
+       - name: demo-component-2
+         repository: registry/destination-image-repository-2
+         tags: [latest]
+ tenantPipeline:
+   pipelineRef: 
+     resolver: git
+     params:
+       - name: url
+         value: "https://github.com/scoheb/release-service-catalog"
+       - name: revision
+         value: tenant-release-pipelines
+       - name: pathInRepo
+         value: "pipelines/tenant-push-to-external-registry/tenant-push-to-external-registry.yaml"
+   serviceAccountName: appstudio-pipeline

@@ -22,6 +22,7 @@ resources:
   - ./kube-rbac-proxy
   - ./kube-state-metrics
   - ./metrics-collector
+  # - ./memcached-exporter
   - ./multicloud-integrations
   - ./multicluster-observability-addon
   - ./multicluster-observability-operator

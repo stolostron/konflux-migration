@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: crt-redhat-acm-tenant
+  name: bundle-manager
+rules:
+- apiGroups: ["appstudio.redhat.com"] 
+  resources: ["releaseplans", "releases", "snapshots"]
+  verbs: ["get", "watch", "list"]

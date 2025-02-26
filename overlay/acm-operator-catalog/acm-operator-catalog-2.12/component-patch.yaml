@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/application
+  value: catalog-release-acm-212
+- op: replace
+  path: /spec/source/git/revision
+  value: acm-custom-registry

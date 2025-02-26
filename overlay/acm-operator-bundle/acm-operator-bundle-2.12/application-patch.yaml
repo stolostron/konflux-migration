@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: bundle-release
+- op: replace
+  path: /spec/description
+  value: "Bundle Build for ACM 2.12"
+- op: replace
+  path: /spec/displayName
+  value: "ACM Bundle 2.12"
