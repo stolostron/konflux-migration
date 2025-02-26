@@ -1,0 +1,65 @@
+- op: replace
+  path: /metadata/name
+  value: publish-dev
+- op: replace
+  path: /spec/application
+  value: release-mce-28
+- op: replace
+  path: /spec/data/mapping
+  value:
+    components: 
+      - name: addon-manager-mce-28
+        repository: quay.io/acm-d/addon-manager-rhel9
+      - name: backplane-must-gather-mce-28
+        repository: quay.io/acm-d/must-gather-rhel9
+      - name: backplane-operator-mce-28
+        repository: quay.io/acm-d/backplane-rhel9-operator
+      - name: cluster-api-provider-kubevirt-mce-28
+        repository: quay.io/acm-d/cluster-api-provider-kubevirt-rhel9
+      - name: cluster-curator-controller-mce-28
+        repository: quay.io/acm-d/cluster-curator-controller-rhel9
+      - name: cluster-image-set-controller-mce-28
+        repository: quay.io/acm-d/cluster-image-set-controller-rhel9
+      - name: cluster-proxy-addon-mce-28
+        repository: quay.io/acm-d/cluster-proxy-addon-rhel9
+      - name: cluster-proxy-mce-28
+        repository: quay.io/acm-d/cluster-proxy-rhel9
+      - name: clusterclaims-controller-mce-28
+        repository: quay.io/acm-d/clusterclaims-controller-rhel9
+      - name: clusterlifecycle-state-metrics-mce-28
+        repository: quay.io/acm-d/clusterlifecycle-state-metrics-rhel9
+      - name: console-mce-mce-28
+        repository: quay.io/acm-d/console-mce-rhel9
+      - name: discovery-operator-mce-28
+        repository: quay.io/acm-d/discovery-rhel9
+      - name: hive-mce-28
+        repository: quay.io/acm-d/hive-rhel9
+      - name: hypershift-addon-rhel9-operator
+        repository: quay.io/acm-d/hypershift-addon-operator-mce-28
+      - name: hypershift-release-mce-28
+        repository: quay.io/acm-d/hypershift-rhel9-operator
+      - name: image-based-install-operator-mce-28
+        repository: quay.io/acm-d/image-27d-install-rhel9
+      - name: kube-rbac-proxy-mce-28
+        repository: quay.io/acm-d/kube-rbac-proxy-mce-rhel9
+      - name: managed-serviceaccount-mce-28
+        repository: quay.io/acm-d/managed-serviceaccount-rhel9
+      - name: managedcluster-import-controller-addon-mce-28
+        repository: quay.io/acm-d/managedcluster-import-controller-rhel9
+      - name: multicloud-manager-mce-28
+        repository: quay.io/acm-d/multicloud-manager-rhel9
+      - name: placement-mce-28
+        repository: quay.io/acm-d/placement-rhel9
+      - name: provider-credential-controller-mce-28
+        repository: quay.io/acm-d/provider-credential-controller-rhel9
+      - name: registration-mce-28
+        repository: quay.io/acm-d/registration-rhel9
+      - name: registration-operator-mce-28
+        repository: quay.io/acm-d/registration-operator-rhel9
+      - name: work-mce-28
+        repository: quay.io/acm-d/work-rhel9
+    defaults:
+      tags:
+        - "2.8.0-{{  incrementer  }}"
+        - "2.8.0-{{ timestamp }}"
+        - "2.8.0-{{ git_short_sha }}"

@@ -1,0 +1,8 @@
+- op: replace
+  path: /spec/data/mapping
+  value: {
+    components: [
+      {name: demo-component-1, repository: registry/destination-image-repository-1, tags: [latest]},
+      {name: demo-component-2, repository: registry/destination-image-repository-2, tags: [latest]}
+    ]
+  }
