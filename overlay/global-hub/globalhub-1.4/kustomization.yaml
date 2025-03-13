@@ -30,4 +30,4 @@ patches:
   - target:
       kind: Component
       name: multicluster-global-hub-operator-bundle
-    path: remove-nudge-bundle.yaml
+    path: change-bundle-nudge.yaml

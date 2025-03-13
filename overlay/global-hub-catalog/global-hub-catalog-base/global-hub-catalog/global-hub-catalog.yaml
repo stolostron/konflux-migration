@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: global-hub-catalog
+- op: replace
+  path: /spec/componentName
+  value: global-hub-catalog
+- op: replace
+  path: /spec/source/git/url
+  value:  https://github.com/stolostron/multicluster-global-hub-operator-catalog
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Containerfile" #This will need to updated with the correct file

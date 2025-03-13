@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: catalog-release
+- op: replace
+  path: /spec/description
+  value: "Catalog Build for Global Hub 1.4"
+- op: replace
+  path: /spec/displayName
+  value: "Global Hub Catalog 1.4"
