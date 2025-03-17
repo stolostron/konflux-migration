@@ -2,5 +2,5 @@
 - op: replace
   path: /spec/build-nudges-ref
   value: [
-    "global-hub-catalog-globalhub-1-4"
+    "global-hub-catalog-globalhub-1-5"
   ]

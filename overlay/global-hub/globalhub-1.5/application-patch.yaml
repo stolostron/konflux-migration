@@ -4,7 +4,7 @@
   value: release
 - op: replace
   path: /spec/description
-  value: "Pipeline for Global Hub 1.4"
+  value: "Pipeline for Global Hub 1.5"
 - op: replace
   path: /spec/displayName
-  value: "Global Hub 1.4"
+  value: "Global Hub 1.5"

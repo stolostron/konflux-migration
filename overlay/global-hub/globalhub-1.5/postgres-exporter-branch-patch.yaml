@@ -1,4 +1,4 @@
 ---
 - op: replace
   path: /spec/source/git/revision
-  value: main
+  value: release-2.14
