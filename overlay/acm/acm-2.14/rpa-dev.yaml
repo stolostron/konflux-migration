@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true' 
- name: rpa-dev-acm-214
+ name: rpa-dev
  namespace: crt-redhat-acm-tenant
 spec:
   applications: 
@@ -32,7 +32,7 @@ spec:
         - name: observatorium-acm-214
           repository: quay.io/acm-d/observatorium-rhel9
         - name: multiclusterhub-operator-acm-214
-          repository: quay.io/acm-d/multiclusterhub-rhel9 ## FIX???
+          repository: quay.io/acm-d/multiclusterhub-rhel9
         - name: metrics-collector-acm-214
           repository: quay.io/acm-d/metrics-collector-rhel9
         - name: grafana-acm-214

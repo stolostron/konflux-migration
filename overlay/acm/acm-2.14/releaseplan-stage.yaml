@@ -5,7 +5,7 @@ metadata:
    release.appstudio.openshift.io/auto-release: 'false'
    release.appstudio.openshift.io/standing-attribution: 'true'
    release.appstudio.openshift.io/releasePlanAdmission: 'rpa-stage-acm-214'
- name: stage-publish-acm-214
+ name: stage-publish
  namespace: crt-redhat-acm-tenant #assisted installer workspace
 spec:
  application: release-acm-214 #Application we're getting components from

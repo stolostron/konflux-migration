@@ -2,7 +2,7 @@
 apiVersion: appstudio.redhat.com/v1alpha1
 kind: ReleasePlanAdmission
 metadata:
-  name: rpa-prod-mce-27
+  name: rpa-prod
   labels:
     release.appstudio.openshift.io/auto-release: 'false'
     pp.engineering.redhat.com/business-unit: <bu-name> #hybrid-cloud-experience ??

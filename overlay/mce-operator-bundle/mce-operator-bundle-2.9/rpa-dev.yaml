@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true' 
- name: rpa-dev-bundle-mce-29
+ name: rpa-dev-bundle
  namespace: crt-redhat-acm-tenant
 spec:
   applications: 
@@ -14,7 +14,7 @@ spec:
     mapping:
       components: 
         - name: mce-operator-bundle-mce-29
-          repository: quay.io/acm-p/mce-operator-bundle
+          repository: quay.io/acm-d/mce-operator-bundle
       defaults:
         tags:
           - "2.9.0-{{ incrementer }}"

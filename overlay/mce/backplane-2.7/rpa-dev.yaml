@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true' 
- name: rpa-dev-mce-27
+ name: rpa-dev
  namespace: crt-redhat-acm-tenant
 spec:
   applications: 

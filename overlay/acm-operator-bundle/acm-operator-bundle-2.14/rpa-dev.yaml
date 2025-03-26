@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true' 
- name: rpa-dev-bundle-acm-214
+ name: rpa-dev-bundle
  namespace: crt-redhat-acm-tenant
 spec:
   applications: 
@@ -14,7 +14,7 @@ spec:
     mapping:
       components: 
         - name: acm-operator-bundle-acm-214
-          repository: quay.io/acm-p/acm-operator-bundle
+          repository: quay.io/acm-d/acm-operator-bundle
       defaults:
         tags:
           - "2.14.0-{{  incrementer  }}"
