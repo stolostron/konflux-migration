@@ -1,0 +1,17 @@
+- op: replace
+  path: /metadata/name
+  value: publish-bundle
+- op: replace
+  path: /spec/application
+  value: bundle-release-mce-29
+- op: replace
+  path: /spec/data/mapping
+  value:
+    components: 
+      - name: acm-operator-bundle-acm-214
+        repository: quay.io/acm-d/mce-operator-bundle
+    defaults:
+      tags:
+        - "2.14.0-{{  incrementer  }}"
+        - "2.14.0-{{ timestamp }}"
+        - "2.14.0-{{ git_short_sha }}"

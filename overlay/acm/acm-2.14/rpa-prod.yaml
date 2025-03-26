@@ -1,0 +1,87 @@
+---
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlanAdmission
+metadata:
+  name: rpa-prod-acm-214
+  labels:
+    release.appstudio.openshift.io/auto-release: 'false'
+    pp.engineering.redhat.com/business-unit: <bu-name> #hybrid-cloud-experience ??
+spec:
+  applications:
+    - release-acm-214
+  data:
+    releaseNotes:
+      product_id: <product ID> # ??
+      product_name: multicluster engine for Kubernetes
+      product_version: 2.14.0
+    mapping:
+      components: 
+        - name: insights-client-acm-214
+          repository: quay.io/acm-d/insights-client-rhel9
+        - name: klusterlet-addon-controller-acm-214
+          repository: quay.io/acm-d/klusterlet-addon-controller-rhel9
+        - name: acm-cli-acm-214
+          repository: quay.io/acm-d/acm-cli-rhel9
+        - name: multicluster-operators-channel-acm-214
+          repository: quay.io/acm-d/multicluster-operators-channel-rhel9
+        - name: must-gather-acm-214
+          repository: quay.io/acm-d/must-gather-rhel9
+        - name: governance-policy-addon-controller-acm-214
+          repository: quay.io/acm-d/governance-policy-addon-controller-rhel9
+        - name: search-indexer-acm-214
+          repository: quay.io/acm-d/search-indexer-rhel9
+        - name: governance-policy-framework-addon-acm-214
+          repository: quay.io/acm-d/governance-policy-framework-addon-rhel9
+        - name: observatorium-acm-214
+          repository: quay.io/acm-d/observatorium-rhel9
+        - name: multiclusterhub-operator-acm-214
+          repository: quay.io/acm-d/multiclusterhub-rhel9 ## FIX???
+        - name: metrics-collector-acm-214
+          repository: quay.io/acm-d/metrics-collector-rhel9
+        - name: grafana-acm-214
+          repository: quay.io/acm-d/acm-grafana-rhel9
+        - name: prometheus-operator-acm-214
+          repository: quay.io/acm-d/prometheus-rhel9
+        - name: multicluster-operators-subscription-acm-214
+          repository: quay.io/acm-d/multicluster-operators-subscription-rhel9
+        - name: cluster-permission-acm-214
+          repository: quay.io/acm-d/acm-cluster-permission-rhel9
+        - name: submariner-addon-acm-214
+          repository: quay.io/acm-d/submariner-addon-rhel9
+        - name: thanos-acm-214
+          repository: quay.io/acm-d/thanos-rhel9
+        - name: node-exporter-acm-214
+          repository: quay.io/acm-d/node-exporter-rhel9
+        - name: multicluster-operators-application-acm-214
+          repository: quay.io/acm-d/multicluster-operators-application-rhel9
+        - name: kube-state-metrics-acm-214
+          repository: quay.io/acm-d/kube-state-metrics-rhel9
+        - name: search-collector-acm-214
+          repository: quay.io/acm-d/search-collector-rhel9
+        - name: multicluster-observability-addon-acm-214
+          repository: quay.io/acm-d/multicluster-observability-addon-rhel9
+        - name: thanos-receive-controller-acm-214
+          repository: quay.io/acm-d/thanos-receive-controller-rhel9
+      defaults:
+        tags:
+          - "2.14.0-{{  incrementer  }}"
+          - "2.14.0-{{ timestamp }}"
+          - "2.14.0-{{ git_short_sha }}"
+#    pushSourceContainer: true
+#  pyxis:
+#    secret: pyxis-production-secret
+#    server: production
+# environment: <sre-production>
+  origin: acm-base
+  pipeline:
+    pipelineRef:
+      resolver: git
+      params:
+        - name: url
+          value: "https://github.com/konflux-ci/release-service-catalog.git"
+        - name: revision
+          value: production
+        - name: pathInRepo
+          value: "pipelines/rh-advisories/rh-advisories.yaml"
+  policy: registry-standard #Need a policy to publish release
+  serviceAccount: release-registry-prod 

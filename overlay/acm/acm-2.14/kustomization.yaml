@@ -32,3 +32,21 @@ patches:
       kind: Component
       name: siteconfig.*
     path: siteconfig-branch-patch.yaml
+  - target:
+      kind: ReleasePlan
+    path: releaseplan-dev.yaml
+  - target:
+      kind: ReleasePlanAdmission
+    path: rpa-dev.yaml
+  # - target:
+  #     kind: ReleasePlan
+  #   path: releaseplan-prod.yaml
+  # - target:
+  #     kind: ReleasePlanAdmission
+  #   path: rpa-prod.yaml
+  # - target:
+  #     kind: ReleasePlan
+  #   path: releaseplan-stage.yaml
+  # - target:
+  #     kind: ReleasePlanAdmission
+  #   path: rpa-stage.yaml
