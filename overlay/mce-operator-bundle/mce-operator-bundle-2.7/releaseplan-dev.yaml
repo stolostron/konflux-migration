@@ -1,0 +1,18 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true'
+   release.appstudio.openshift.io/standing-attribution: 'true'
+   release.appstudio.openshift.io/releasePlanAdmission: 'rpa-dev-bundle-mce-27'
+ name: dev-publish-bundle
+ namespace: crt-redhat-acm-tenant 
+spec:
+ application: bundle-release-mce-27 #Application we're getting components from
+ data:
+  releaseNotes:
+    synopsis: Multicluster Engine for Kubernetes 2.7 for RHEL 9
+    topic: Multicluster Engine v2.7
+    description: Multicluster engine for Kubernetes 2.7
+    solution: Multicluster engine for Kubernetes v2.7 images
+ target: crt-redhat-acm-tenant #managed workspace that deploys the application - might be rhtap-releng-tenant

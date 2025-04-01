@@ -1,0 +1,18 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true'
+   release.appstudio.openshift.io/standing-attribution: 'true'
+   release.appstudio.openshift.io/releasePlanAdmission: 'rpa-dev-bundle-acm-214'
+ name: dev-publish-bundle
+ namespace: crt-redhat-acm-tenant 
+spec:
+ application: bundle-release-acm-214 #Application we're getting components from
+ data:
+  releaseNotes:
+    synopsis: Advanced Cluster Management for Kubernetes 2.14 for RHEL 9
+    topic: Advanced Cluster Management v2.14
+    description: Advanced Cluster Management for Kubernetes 2.14
+    solution: Advanced Cluster Management for Kubernetes v2.14 images
+ target: crt-redhat-acm-tenant #managed workspace that deploys the application - might be rhtap-releng-tenant

@@ -1,0 +1,34 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlanAdmission
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true' 
+ name: rpa-dev-bundle
+ namespace: crt-redhat-acm-tenant
+spec:
+  applications: 
+    - bundle-release-mce-29
+  origin: crt-redhat-acm-tenant
+  policy: always-pass-policy
+  data:
+    mapping:
+      components: 
+        - name: mce-operator-bundle-mce-29
+          repository: quay.io/acm-d/mce-operator-bundle
+      defaults:
+        tags:
+          - "2.9.0-{{ incrementer }}"
+          - "2.9.0-{{ timestamp }}"
+          - "2.9.0-{{ git_short_sha }}"
+  pipeline:
+    pipelineRef: 
+      resolver: git
+      params:
+        - name: url
+          value: "https://github.com/konflux-ci/release-service-catalog.git"
+        - name: revision
+          value: development
+        - name: pathInRepo
+          value: "pipelines/managed/push-to-external-registry/push-to-external-registry.yaml"
+    timeouts:
+      pipeline: "4h0m0s"

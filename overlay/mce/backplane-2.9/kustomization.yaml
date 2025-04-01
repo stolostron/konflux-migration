@@ -4,17 +4,17 @@ kind: Kustomization
 nameSuffix: -mce-29
 resources:
   - ../mce-base
+  - releaseplan-dev.yaml
+  - rpa-dev.yaml
+  # - releaseplan-prod.yaml
+  # - rpa-prod.yaml
+  # - releaseplan-stage.yaml
+  # - rpa-stage.yaml
 
 patches:
   - target:
       kind: Application
     path: application-patch.yaml
-  - target:
-      kind: ReleasePlan
-    path: releaseplan-dev-patch.yaml
-  # - target:
-  #     kind: ReleasePlan
-  #   path: releaseplan-prod-patch.yaml
   - target:
       kind: Component
     path: component-patch.yaml

@@ -4,6 +4,12 @@ kind: Kustomization
 nameSuffix: -acm-214
 resources:
   - ../acm-operator-bundle-base
+  - releaseplan-dev.yaml
+  - rpa-dev.yaml
+  # - releaseplan-prod.yaml -- NEED TO CREATE THESE
+  # - rpa-prod.yaml
+  # - releaseplan-stage.yaml
+  # - rpa-stage.yaml
 
 patches:
   - target:

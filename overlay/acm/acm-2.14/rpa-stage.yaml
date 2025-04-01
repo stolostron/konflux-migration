@@ -1,0 +1,77 @@
+---
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlanAdmission
+metadata:
+  name: rpa-stage
+  labels:
+    release.appstudio.openshift.io/auto-release: 'false'
+    pp.engineering.redhat.com/business-unit: <bu-name> #hybrid-cloud-experience ??
+spec:
+  applications:
+    - release-mce-214
+  origin: crt-redhat-acm-tenant
+  policy: always-pass-policy
+  data:
+    mapping:
+      components: 
+        - name: insights-client-acm-214
+          repository: quay.io/stolostron/insights-client-rhel9
+        - name: klusterlet-addon-controller-acm-214
+          repository: quay.io/stolostron/klusterlet-addon-controller-rhel9
+        - name: acm-cli-acm-214
+          repository: quay.io/stolostron/acm-cli-rhel9
+        - name: multicluster-operators-channel-acm-214
+          repository: quay.io/stolostron/multicluster-operators-channel-rhel9
+        - name: must-gather-acm-214
+          repository: quay.io/stolostron/must-gather-rhel9
+        - name: governance-policy-addon-controller-acm-214
+          repository: quay.io/stolostron/governance-policy-addon-controller-rhel9
+        - name: search-indexer-acm-214
+          repository: quay.io/stolostron/search-indexer-rhel9
+        - name: governance-policy-framework-addon-acm-214
+          repository: quay.io/stolostron/governance-policy-framework-addon-rhel9
+        - name: observatorium-acm-214
+          repository: quay.io/stolostron/observatorium-rhel9
+        - name: multiclusterhub-operator-acm-214
+          repository: quay.io/stolostron/multiclusterhub-rhel9 ## FIX???
+        - name: metrics-collector-acm-214
+          repository: quay.io/stolostron/metrics-collector-rhel9
+        - name: grafana-acm-214
+          repository: quay.io/stolostron/acm-grafana-rhel9
+        - name: prometheus-operator-acm-214
+          repository: quay.io/stolostron/prometheus-rhel9
+        - name: multicluster-operators-subscription-acm-214
+          repository: quay.io/stolostron/multicluster-operators-subscription-rhel9
+        - name: cluster-permission-acm-214
+          repository: quay.io/stolostron/acm-cluster-permission-rhel9
+        - name: submariner-addon-acm-214
+          repository: quay.io/stolostron/submariner-addon-rhel9
+        - name: thanos-acm-214
+          repository: quay.io/stolostron/thanos-rhel9
+        - name: node-exporter-acm-214
+          repository: quay.io/stolostron/node-exporter-rhel9
+        - name: multicluster-operators-application-acm-214
+          repository: quay.io/stolostron/multicluster-operators-application-rhel9
+        - name: kube-state-metrics-acm-214
+          repository: quay.io/stolostron/kube-state-metrics-rhel9
+        - name: search-collector-acm-214
+          repository: quay.io/stolostron/search-collector-rhel9
+        - name: multicluster-observability-addon-acm-214
+          repository: quay.io/stolostron/multicluster-observability-addon-rhel9
+        - name: thanos-receive-controller-acm-214
+          repository: quay.io/stolostron/thanos-receive-controller-rhel9
+      defaults:
+        tags:
+          - "2.9.0-{{  incrementer  }}"
+          - "2.9.0-{{ timestamp }}"
+          - "2.9.0-{{ git_short_sha }}"
+  pipeline:
+    pipelineRef:
+      resolver: git
+      params:
+        - name: url
+          value: "https://github.com/konflux-ci/release-service-catalog.git"
+        - name: revision
+          value: stage
+        - name: pathInRepo
+          value: "pipelines/rh-advisories/rh-advisories.yaml"

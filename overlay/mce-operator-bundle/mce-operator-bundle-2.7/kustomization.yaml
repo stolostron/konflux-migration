@@ -12,6 +12,3 @@ patches:
   - target:
       kind: Component
     path: component-patch.yaml
-  - target:
-      kind: ReleasePlan
-    path: releaseplan-bundle-patch.yaml

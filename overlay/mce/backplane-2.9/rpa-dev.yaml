@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
  labels:
    release.appstudio.openshift.io/auto-release: 'true' 
- name: rpa-dev-mce-29
+ name: rpa-dev
  namespace: crt-redhat-acm-tenant
 spec:
   applications: 
@@ -65,6 +65,8 @@ spec:
           repository: quay.io/acm-d/work-rhel9
       defaults:
         tags:
+          - "2.9.0-{{ incrementer }}"
+          - "2.9.0-{{ timestamp }}"
           - "2.9.0-{{ git_short_sha }}"
   pipeline:
     pipelineRef: 

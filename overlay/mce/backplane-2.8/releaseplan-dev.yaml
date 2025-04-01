@@ -5,7 +5,7 @@ metadata:
    release.appstudio.openshift.io/auto-release: 'true'
    release.appstudio.openshift.io/standing-attribution: 'true'
    release.appstudio.openshift.io/releasePlanAdmission: 'rpa-dev-mce-28'
- name: dev-publish-mce-28
+ name: dev-publish
  namespace: crt-redhat-acm-tenant 
 spec:
  application: release-mce-28 #Application we're getting components from
