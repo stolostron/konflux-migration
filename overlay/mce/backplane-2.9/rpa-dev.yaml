@@ -39,12 +39,12 @@ spec:
           repository: quay.io/acm-d/discovery-rhel9
         - name: hive-mce-29
           repository: quay.io/acm-d/hive-rhel9
-        - name: hypershift-addon-rhel9-operator
-          repository: quay.io/acm-d/hypershift-addon-operator-mce-29
+        - name: hypershift-addon-operator-mce-29
+          repository: quay.io/acm-d/hypershift-addon-rhel9-operator
         - name: hypershift-release-mce-29
           repository: quay.io/acm-d/hypershift-rhel9-operator
         - name: image-based-install-operator-mce-29
-          repository: quay.io/acm-d/image-27d-install-rhel9
+          repository: quay.io/acm-d/image-based-install-rhel9
         - name: kube-rbac-proxy-mce-29
           repository: quay.io/acm-d/kube-rbac-proxy-mce-rhel9
         - name: managed-serviceaccount-mce-29

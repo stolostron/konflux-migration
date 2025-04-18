@@ -24,11 +24,11 @@ spec:
         - name: must-gather-acm-214
           repository: quay.io/acm-d/must-gather-rhel9
         - name: governance-policy-addon-controller-acm-214
-          repository: quay.io/acm-d/governance-policy-addon-controller-rhel9
+          repository: quay.io/acm-d/acm-governance-policy-addon-controller-rhel9
         - name: search-indexer-acm-214
-          repository: quay.io/acm-d/search-indexer-rhel9
+          repository: quay.io/acm-d/acm-search-indexer-rhel9
         - name: governance-policy-framework-addon-acm-214
-          repository: quay.io/acm-d/governance-policy-framework-addon-rhel9
+          repository: quay.io/acm-d/acm-governance-policy-framework-addon-rhel9
         - name: observatorium-acm-214
           repository: quay.io/acm-d/observatorium-rhel9
         - name: multiclusterhub-operator-acm-214
@@ -57,8 +57,50 @@ spec:
           repository: quay.io/acm-d/search-collector-rhel9
         - name: multicluster-observability-addon-acm-214
           repository: quay.io/acm-d/multicluster-observability-addon-rhel9
+        - name: multicloud-integrations-acm-214
+          repository: quay.io/acm-d/multicloud-integrations-rhel9
         - name: thanos-receive-controller-acm-214
           repository: quay.io/acm-d/thanos-receive-controller-rhel9
+        - name: memcached-exporter-acm-214
+          repository: quay.io/acm-d/memcached-exporter-rhel9
+        - name: volsync-addon-controller-acm-214
+          repository: quay.io/acm-d/acm-volsync-addon-controller-rhel9
+        - name: search-v2-api-acm-214
+          repository: quay.io/acm-d/acm-search-v2-api-rhel9
+        - name: siteconfig-acm-214
+          repository: quay.io/acm-d/acm-siteconfig-rhel9
+        - name: prometheus-acm-214
+          repository: quay.io/acm-d/prometheus-rhel9
+        - name: config-policy-controller-acm-214
+          repository: quay.io/acm-d/config-policy-controller-rhel9
+        - name: kube-rbac-proxy-acm-214
+          repository: quay.io/acm-d/kube-rbac-proxy-rhel9
+        - name: cert-policy-controller-acm-214
+          repository: quay.io/acm-d/cert-policy-controller-rhel9
+        - name: prometheus-alertmanager-acm-214
+          repository: quay.io/acm-d/prometheus-alertmanager-rhel9
+        - name: rbac-query-proxy-acm-214
+          repository: quay.io/acm-d/rbac-query-proxy-rhel9
+        - name: prometheus-config-reloader-acm-214
+          repository: quay.io/acm-d/acm-prometheus-config-reloader-rhel9
+        - name: governance-policy-propagator-acm-214
+          repository: quay.io/acm-d/governance-policy-propagator-rhel9
+        - name: observatorium-operator-acm-214
+          repository: quay.io/acm-d/observatorium-operator-rhel9
+        - name: search-v2-operator-acm-214
+          repository: quay.io/acm-d/acm-search-v2-rhel9
+        - name: endpoint-monitoring-operator-acm-214
+          repository: quay.io/acm-d/endpoint-monitoring-rhel9-operator
+        - name: insights-metrics-acm-214
+          repository: quay.io/acm-d/insights-metrics-rhel9
+        - name: console-acm-214
+          repository: quay.io/acm-d/console-rhel9
+        - name: grafana-dashboard-loader-acm-214
+          repository: quay.io/acm-d/grafana-dashboard-loader-rhel9
+        - name: multicluster-observability-operator-acm-214
+          repository: quay.io/acm-d/multicluster-observability-rhel9-operator
+        - name: cluster-backup-operator-acm-214
+          repository: quay.io/acm-d/cluster-backup-rhel9-operator
       defaults:
         tags:
           - "2.14.0-{{  incrementer  }}"
