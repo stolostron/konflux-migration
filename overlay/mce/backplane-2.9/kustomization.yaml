@@ -52,3 +52,10 @@ patches:
     target:
       kind: Component
       name: "aws-encryption-provider.*"
+  - patch: |-
+      - op: replace
+        path: /spec/source/git/revision
+        value: backplane-2.9
+    target:
+      kind: Component
+      name: "cluster-api-webhook-config.*"
