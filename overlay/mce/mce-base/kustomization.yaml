@@ -9,6 +9,8 @@ resources:
   - ./backplane-operator
   - ./cluster-api-provider-agent
   - ./cluster-api-provider-kubevirt
+  - ./cluster-api-provider-openshift-assisted-bootstrap
+  - ./cluster-api-provider-openshift-assisted-control-plane
   - ./cluster-api-webhook-config
   - ./cluster-curator-controller
   - ./cluster-image-set-controller

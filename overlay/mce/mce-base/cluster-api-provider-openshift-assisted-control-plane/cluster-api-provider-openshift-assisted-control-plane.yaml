@@ -1,0 +1,12 @@
+- op: replace
+  path: /metadata/name
+  value: cluster-api-provider-openshift-assisted-control-plane
+- op: replace
+  path: /spec/componentName
+  value: cluster-api-provider-openshift-assisted-control-plane
+- op: replace
+  path: /spec/source/git/url
+  value: https://github.com/openshift-assisted/cluster-api-provider-openshift-assisted
+- op: replace
+  path: /spec/source/git/dockerfileUrl
+  value: "Dockerfile.controlplane-provider"

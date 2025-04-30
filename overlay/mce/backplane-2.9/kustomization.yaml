@@ -32,6 +32,14 @@ patches:
     path: openshift-branch-patch.yaml
   - target:
       kind: Component
+      name: cluster-api-provider-openshift-assisted.*
+    path: component-patch.yaml
+  - target:
+      kind: Component
+      name: "cluster-api-webhook-config.*"
+    path: component-patch.yaml
+  - target:
+      kind: Component
       name: hive.*
     path: hive-branch-patch.yaml
   - target:
@@ -52,10 +60,3 @@ patches:
     target:
       kind: Component
       name: "aws-encryption-provider.*"
-  - patch: |-
-      - op: replace
-        path: /spec/source/git/revision
-        value: backplane-2.9
-    target:
-      kind: Component
-      name: "cluster-api-webhook-config.*"
