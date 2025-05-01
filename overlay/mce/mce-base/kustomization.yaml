@@ -21,7 +21,8 @@ resources:
   - ./console-mce
   - ./discovery-operator
   - ./hive 
-  - ./hypershift-addon-operator 
+  - ./hypershift-addon-operator
+  - ./hypershift-cli
   - ./hypershift-release
   - ./image-based-install-operator
   - ./kube-rbac-proxy 

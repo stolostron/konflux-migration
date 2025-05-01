@@ -28,6 +28,10 @@ patches:
     path: hypershift-branch-patch.yaml
   - target:
       kind: Component
+      name: hypershift-cli.*
+    path: openshift-branch-patch.yaml
+  - target:
+      kind: Component
       name: cluster-api.*
     path: openshift-branch-patch.yaml
   - target:
@@ -46,13 +50,10 @@ patches:
       kind: Component
       name: cluster-api-provider-agent.*
     path: cluster-api-provider-agent-branch-patch.yaml
-  - patch: |-
-      - op: replace
-        path: /spec/source/git/revision
-        value: release-4.19
-    target:
+  - target:
       kind: Component
       name: "apiserver-network-proxy.*"
+    path: openshift-branch-patch.yaml
   - patch: |-
       - op: replace
         path: /spec/source/git/revision
