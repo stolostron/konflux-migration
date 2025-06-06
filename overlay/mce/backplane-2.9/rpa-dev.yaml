@@ -19,8 +19,14 @@ spec:
           repository: quay.io/acm-d/must-gather-rhel9
         - name: backplane-operator-mce-29
           repository: quay.io/acm-d/backplane-rhel9-operator
+        - name: cluster-api-provider-agent-mce-29
+          repository: quay.io/acm-d/cluster-api-provider-agent-rhel9
         - name: cluster-api-provider-kubevirt-mce-29
           repository: quay.io/acm-d/cluster-api-provider-kubevirt-rhel9
+        - name: cluster-api-provider-openshift-assisted-bootstrap-mce-29
+          repository: quay.io/acm-d/capoa-bootstrap-rhel9
+        - name: cluster-api-provider-openshift-assisted-control-plane-mce-29
+          repository: quay.io/acm-d/capoa-control-plane-rhel9
         - name: cluster-api-webhook-config-mce-29
           repository: quay.io/acm-d/mce-capi-webhook-config-rhel9
         - name: cluster-curator-controller-mce-29
