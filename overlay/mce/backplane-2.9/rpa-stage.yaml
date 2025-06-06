@@ -42,6 +42,8 @@ spec:
           repository: quay.io/stolostron/hive-rhel9
         - name: hypershift-addon-rhel9-operator
           repository: quay.io/stolostron/hypershift-addon-operator-mce-29
+        - name: hypershift-cli-mce-29 
+          repository: registry.stage.redhat.io/multicluster-engine/hypershift-cli-rhel9 
         - name: hypershift-release-mce-29
           repository: quay.io/stolostron/hypershift-rhel9-operator
         - name: image-based-install-operator-mce-29

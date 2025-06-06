@@ -41,6 +41,8 @@ spec:
           repository: quay.io/acm-d/hive-rhel9
         - name: hypershift-addon-operator-mce-29
           repository: quay.io/acm-d/hypershift-addon-rhel9-operator
+        - name: hypershift-cli-mce-29
+          repository: quay.io/acm-d/hypershift-cli-rhel9
         - name: hypershift-release-mce-29
           repository: quay.io/acm-d/hypershift-rhel9-operator
         - name: image-based-install-operator-mce-29
