@@ -25,7 +25,7 @@ spec:
         - name: multicluster-operators-channel-acm-214
           repository: registry.redhat.io/rhacm2/multicluster-operators-channel-rhel9
         - name: must-gather-acm-214
-          repository: registry.redhat.io/rhacm2/must-gather-rhel9
+          repository: registry.redhat.io/rhacm2/acm-must-gather-rhel9
         - name: governance-policy-addon-controller-acm-214
           repository: registry.redhat.io/rhacm2/governance-policy-addon-controller-rhel9
         - name: search-indexer-acm-214
@@ -41,7 +41,7 @@ spec:
         - name: grafana-acm-214
           repository: registry.redhat.io/rhacm2/acm-grafana-rhel9
         - name: prometheus-operator-acm-214
-          repository: registry.redhat.io/rhacm2/prometheus-rhel9
+          repository: registry.redhat.io/rhacm2/acm-prometheus-rhel9
         - name: multicluster-operators-subscription-acm-214
           repository: registry.redhat.io/rhacm2/multicluster-operators-subscription-rhel9
         - name: cluster-permission-acm-214

@@ -22,7 +22,7 @@ spec:
         - name: multicluster-operators-channel-acm-214
           repository: quay.io/acm-d/multicluster-operators-channel-rhel9
         - name: must-gather-acm-214
-          repository: quay.io/acm-d/must-gather-rhel9
+          repository: quay.io/acm-d/acm-must-gather-rhel9
         - name: governance-policy-addon-controller-acm-214
           repository: quay.io/acm-d/acm-governance-policy-addon-controller-rhel9
         - name: search-indexer-acm-214
@@ -38,7 +38,7 @@ spec:
         - name: grafana-acm-214
           repository: quay.io/acm-d/acm-grafana-rhel9
         - name: prometheus-operator-acm-214
-          repository: quay.io/acm-d/prometheus-rhel9
+          repository: quay.io/acm-d/acm-prometheus-rhel9
         - name: multicluster-operators-subscription-acm-214
           repository: quay.io/acm-d/multicluster-operators-subscription-rhel9
         - name: cluster-permission-acm-214
