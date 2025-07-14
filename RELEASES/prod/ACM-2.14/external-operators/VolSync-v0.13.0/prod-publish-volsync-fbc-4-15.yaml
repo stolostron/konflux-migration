@@ -1,0 +1,10 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Release
+metadata:
+  name: prod-publish-volsync-fbc-4-15-v0-13-0
+  namespace: volsync-tenant
+  labels:
+    release.appstudio.openshift.io/author: "tflower"
+spec:
+  snapshot: "volsync-fbc-4-15-cp4gg"
+  releasePlan: volsync-fbc-release-plan-prod-4-15

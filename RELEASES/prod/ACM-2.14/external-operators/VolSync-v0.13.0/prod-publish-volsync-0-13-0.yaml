@@ -1,0 +1,21 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Release
+metadata:
+  name: prod-publish-volsync-0-13-0
+  namespace: volsync-tenant
+  labels:
+    release.appstudio.openshift.io/author: "tflower"
+spec:
+  snapshot: "volsync-0-13-zxm7f"
+  releasePlan: volsync-release-plan-prod-0-13
+  data:
+    mapping:
+      defaults:
+        tags:
+          - v0.13.0
+    releaseNotes:
+      type: RHEA
+      issues:
+        fixed:
+          - id: ACM-19592
+            source: issues.redhat.com
