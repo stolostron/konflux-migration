@@ -1,0 +1,14 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Release
+metadata:
+  name: prod-publish-catalog-415-glo-150
+  namespace: acm-multicluster-glo-tenant
+  labels:
+    release.appstudio.openshift.io/author: "chuyang"
+spec:
+  data:
+    releaseNotes:
+      type: RHEA
+  releasePlan: catalog-415-publish-prod-globalhub-1-5
+  snapshot: release-catalog-415-globalhub-1-5-qlk9k
+
