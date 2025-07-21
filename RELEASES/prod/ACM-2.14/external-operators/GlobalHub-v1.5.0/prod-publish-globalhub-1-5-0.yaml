@@ -1,0 +1,13 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Release
+metadata:
+  name: prod-publish-globalhub-1-5-0
+  namespace: acm-multicluster-glo-tenant
+  labels:
+    release.appstudio.openshift.io/author: "chuyang"
+spec:
+  data:
+    releaseNotes:
+      type: RHEA
+  releasePlan: prod-publish-globalhub-1-5
+  snapshot: release-globalhub-1-5-pvplm
