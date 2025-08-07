@@ -1,0 +1,27 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Release
+metadata:
+  name: prod-publish-globalhub-1-4-2
+  namespace: acm-multicluster-glo-tenant
+  labels:
+    release.appstudio.openshift.io/author: "chuyang"
+spec:
+  data:
+    releaseNotes:
+      issues:
+        fixed:
+          - id: ACM-20447
+            source: issues.redhat.com
+          - id: ACM-21907
+            source: issues.redhat.com
+          - id: ACM-21554
+            source: issues.redhat.com
+      cves:
+        - key: CVE-2025-22871
+          component: multicluster-global-hub-agent-globalhub-1-4
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
+      type: RHBA
+  gracePeriodDays: 7
+  releasePlan: prod-publish-globalhub-1-4
+  snapshot: release-globalhub-1-4-d52n6 
